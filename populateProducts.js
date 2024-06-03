@@ -29,7 +29,11 @@ function populateProducts(products) {
                         <!-- <p class="mt-1 text-sm text-gray-500">${product.color}</p> -->
                     </div>
                     <p class="text-sm font-medium text-gray-900">${product.price}</p>
+                                    
                 </div>
+                <button href="${whatsappUrl}"
+                    class="flex-shrink-0 text-white bg-blue-500 border-0 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg mt-10 sm:mt-0">Buy
+                    Now</button>
             </a>
         `;
 
