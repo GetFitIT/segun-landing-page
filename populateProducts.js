@@ -40,7 +40,7 @@ function populateProducts(products) {
             // Track click on the entire product div
     productDiv.addEventListener('click', () => {
        // Track click with Facebook Pixel
-      fbq('track', 'Click', {
+      fbq('track', 'Lead', {
         content_name: product.name, // Replace with the actual product name field
         content_category: 'ecommerce', // Adjust category as needed
         // Add other relevant parameters like product ID, price, etc.
