@@ -37,6 +37,17 @@ function populateProducts(products) {
             </a>
         `;
 
+            // Track click on the entire product div
+    productDiv.addEventListener('click', () => {
+       // Track click with Facebook Pixel
+      fbq('track', 'Click', {
+        content_name: product.name, // Replace with the actual product name field
+        content_category: 'ecommerce', // Adjust category as needed
+        // Add other relevant parameters like product ID, price, etc.
+      });
+    });
+
+
         productGrid.appendChild(productDiv);
     });
 }
